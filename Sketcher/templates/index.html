@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<link href="{{url_for('static', filename='styles.css')}}" rel="stylesheet" />
+	<title>Make your photo cartoon</title>
+	
+</head>
+<body class="mx-auto p-2  justify-content-center" style="background: aliceblue;">
+
+	<div class="p-3" style="background: #87b6b8;">
+		<h1 class="text-center mt-2 mb-3">Cartoonify</h1>
+	</div>
+	<div class="row m-5 div1">
+		<div class="col-md-6 col-sm-11">
+			<p>Searching for trendy edits to take your creativity to the next level? Tap into the Cartoonify photo to cartoon filter to cartoonize or pencil sketch your favorite pictures online for free with just a few clicks.</p>
+			<button class="m-3"><a href="/cartoon" style="color: black; text-decoration: none;">Make your Cartoon</a></button>
+		</div>
+		<div class="col-md-6 col-sm-11 div1_img">
+			<img id="img_1" src=" {{url_for("static", filename="img/girl_on_the_ground.jpg")}}">
+			<img id="img_2" src=" {{url_for("static", filename="img/cartoon_girl_on_the_ground.jpg")}}">
+		</div>
+	</div>
+	<div class="p-4"></div>
+	<div class="para justify-content-center p-3">
+		<h2 class="text-center">How to turn a photo into a cartoon</h2>
+		<ul>
+			<li><strong>Upload image to the photo editor:</strong> Upload image to start editing a picture from your photo library.</li>
+			<li><strong>Apply effects:</strong> Experiment with different cartoon effects or sketch effect and choose whichever one you like best.</li>
+			<li><strong>Customize design:</strong> Customize your pictures to perfection with the Picsart photo editor.</li>
+			<li><strong>Download and share:</strong> Download your new cartoon design to share it with the world.</li>
+		</ul>
+		
+	</div>
+	<div class="row m-5 div2">
+		<div class="col-md-6 col-sm-11">
+			<h2>Turn photos to cartoons or sketches in seconds</h2>
+			<p>Whether you’re editing selfies or still-life pictures, choosing the perfect filter for your pictures can feel pretty overwhelming. The good news? Cartoonify’s easy-to-use cartoon effect can help you unleash your inner artist with pro-grade cartoon filters. From social media posts to cartoon comics, it’s easier than ever to push your creative boundaries and transform your photos into art with one-of-a-kind cartoon or sketch effects.</p>
+		</div>
+		<div class="col-md-6 col-sm-11 div2_img">
+			<img id="img_1" src=" {{url_for("static", filename="img/camera.jpg")}}">
+			<img id="img_2" src=" {{url_for("static", filename="img/sketch_camera.jpg")}}">
+		</div>
+	</div>
+	<div class="footer pt-5" style="background: #87b6b8;">
+		<ul class="text-center">
+			<li>About us</li>
+			<li>Contact us</li>
+			<li>Privacy policy</li>
+			<li>Terms of use</li>
+			<li>Cookies settings</li>
+		</ul>
+		<hr>
+		<p class="p-2 pb-3 fw-semibold">Copyright &copy; 2020-2030. All rights reserved.</p>
+	</div>
+
+</body>
+</html>
