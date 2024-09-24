@@ -9,7 +9,7 @@ import cv2
 
 app = Flask(__name__)
 
-app.config['UPLOAD_FOLDER'] = 'C:/Users/Shiwangi Baranwal/Python/Flask projects/Sketcher/static/img'
+app.config['UPLOAD_FOLDER'] = '../Flask projects/Sketcher/static/img'
 
 class Image_processor():
     def __init__(self):
@@ -151,7 +151,7 @@ def sketch():
 
 @app.route('/download')
 def download():
-    if imageProcessor.encoded_img is None:
+    if img is None:
          return 'File not found'
     image_bytes = base64.b64decode(imageProcessor.encoded_img)
 
